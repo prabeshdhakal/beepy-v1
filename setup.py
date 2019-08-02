@@ -5,7 +5,7 @@ def readme():
     return f.read()
 
 setup(name='beepy',
-      version='1.0.7',
+      version='1.0.8',
       description='Play notification sounds.',
       long_description=readme(),
       classifiers=[
@@ -17,7 +17,7 @@ setup(name='beepy',
         'Topic :: Multimedia :: Sound/Audio',
       ],
       keywords='beep notification sound beepr beeper',
-      url='http://github.com/storborg/funniest',
+      url='https://github.com/prabeshdhakal/beepy/',
       author='Prabesh Dhakal',
       author_email='prabesh.official@gmail.com',
       license='MIT',
