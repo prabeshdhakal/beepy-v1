@@ -1,0 +1,1 @@
+from beepy.make_sound import beep
