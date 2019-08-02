@@ -9,7 +9,7 @@ setup(name='beepy',
       description='Play notification sounds.',
       long_description=readme(),
       classifiers=[
-        'Development Status :: 1 - Planning',
+        'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
         'Natural Language :: English',
