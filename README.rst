@@ -21,7 +21,7 @@ Requirements
 Currently, ``beepy`` only runs on Python 3.
 
 ``beepy`` relies on a Python package called ``simpleaudio`` which can be also be installed using:
-``pip install simpleaudio``. See requirements of simpleaudio `here <https://simpleaudio.readthedocs.io/en/latest/installation.html>`_.
+``pip install simpleaudio``. See requirements of simpleaudio `here <https://simpleaudio.readthedocs.io/en/latest/installation.html>`_. For Windows system, Microsoft Visual C++ 14.0 is required. You can get it with "Microsoft Visual C++ Build Tools" from https://visualstudio.microsoft.com/downloads .
 
 Installation
 =============
