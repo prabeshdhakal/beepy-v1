@@ -21,7 +21,7 @@ Requirements
 Currently, ``beepy`` only runs on Python 3.
 
 ``beepy`` relies on a Python package called ``simpleaudio`` which can be also be installed using:
-``pip install simpleaudio``.
+``pip install simpleaudio``. See requirements of simpleaudio `here <https://simpleaudio.readthedocs.io/en/latest/installation.html>`_.
 
 Installation
 =============
