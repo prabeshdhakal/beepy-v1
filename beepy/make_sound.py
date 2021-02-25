@@ -16,24 +16,23 @@ wave_dict = {
             }
 
 def beep(sound=1):
-    if sound==1 or sound=='coin':
-        sound = 1
-    elif sound==2 or sound=='robot_error':
-        sound = 2
-    elif sound==3 or sound=='error':
-        sound = 3
-    elif sound==4 or sound=='ping':
-        sound = 4
-    elif sound==5 or sound=='ready':
-        sound = 5
-    elif sound==6 or sound=='success':
-        sound = 6
-    elif sound==7 or sound=='wilhelm':
-        sound = 7
-    else:
-        sound = 4
+    sound_names = [
+                   "coin",
+                   'robot_error',
+                   'error',
+                   'ping',
+                   'ready',
+                   'success',
+                   'wilhelm'
+    ]
+    if isinstance(sound, int):
+        if sound not in range(1, 8):
+            sound = 4
+    elif isinstance(sound, str):
+        assert sound in sound_names, f'Name "{sound}" does not exists'
+        sound = sound_names.index(sound) + 1
 
-    wave_obj_file = wave_dict[sound]
+    wave_obj_file = wave_dict.get(sound, 'ping.wav')
     WAVE_PATH = os.path.join(AUDIO_DIR, wave_obj_file)
 
     wave_obj = sa.WaveObject.from_wave_file(WAVE_PATH)
