@@ -26,7 +26,7 @@ def beep(sound=1):
                    'wilhelm'
     ]
     if isinstance(sound, int):
-        if sound not in range(1, 8):
+        if sound not in range(1, len(sound_names) + 1):
             sound = 4
     elif isinstance(sound, str):
         assert sound in sound_names, f'Name "{sound}" does not exists'
