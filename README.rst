@@ -12,8 +12,8 @@ Example Use
 ::
 
    import beepy
-   beep(sound=1) # integer as argument
-   beep(sound='coin') # string as argument
+   beepy.beep(sound=1) # integer as argument
+   beepy.beep(sound='coin') # string as argument
 
 Requirements
 =============
