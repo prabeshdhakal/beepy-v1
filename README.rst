@@ -13,7 +13,9 @@ Example Use
 
    import beepy
    beep(sound=1) # integer as argument
+   beep(sound=1, wait=False) # string as argument, do not wait for the sound to finish
    beep(sound='coin') # string as argument
+   beep(sound='coin',wait=False) # string as argument, do not wait for the sound to finish
 
 Requirements
 =============
@@ -42,6 +44,8 @@ Following are the mappings for the numbers:
 ``5`` : ``'ready'``\ ,
 ``6`` : ``'success'``\ ,
 ``7`` : ``'wilhelm'``
+
+``wait`` is a boolean that just defines if the program should wait for the sound to finish
 
 
 Issues
