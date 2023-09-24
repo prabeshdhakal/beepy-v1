@@ -15,7 +15,7 @@ wave_dict = {
             7:'wilhelm.wav'
             }
 
-def beep(sound=1):
+def beep(sound=1,wait: bool=True):
     sound_names = [
                    "coin",
                    'robot_error',
@@ -40,4 +40,4 @@ def beep(sound=1):
 
     wave_obj = sa.WaveObject.from_wave_file(WAVE_PATH)
     play_obj = wave_obj.play()
-    play_obj.wait_done()
+    if wait: play_obj.wait_done()
